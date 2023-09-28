@@ -1,16 +1,15 @@
-import Header from './Header'
-import NavBar from './NavBar'
-import Footer from './Footer'
+import Header from "./Header";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
-export const Layout = ({children}) => {
+export const Layout = ({ children }) => {
   return (
-    <div>
-        <NavBar/>
-        {children}
-        <Footer />
+    <div className="relative">
+      <NavBar />
+      {children}
+      <Footer />
     </div>
-    
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
